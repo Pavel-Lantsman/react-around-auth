@@ -1,0 +1,8 @@
+.signing {
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 60px auto 80px;
+    align-content: center;
+}

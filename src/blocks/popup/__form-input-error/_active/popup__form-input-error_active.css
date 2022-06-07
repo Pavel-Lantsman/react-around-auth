@@ -1,0 +1,14 @@
+.popup__form-input-error_active {
+  color: #ff0000;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: normal;
+  text-align: start;
+  padding: 0;
+  margin: 5px 0 13px;
+}
+
+.popup__form-input-error_active:last-of-type {
+  margin-bottom: 31px;
+}

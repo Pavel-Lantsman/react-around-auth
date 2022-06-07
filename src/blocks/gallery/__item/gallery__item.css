@@ -1,0 +1,6 @@
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  font-size: 0;
+  position: relative;
+}

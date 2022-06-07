@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 68px;
+  color: #545454;
+}
+
+@media screen and (max-width: 760px) {
+  .footer {
+    margin-top: 50px;
+  }
+}

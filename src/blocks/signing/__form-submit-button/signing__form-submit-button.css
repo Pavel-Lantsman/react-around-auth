@@ -1,0 +1,14 @@
+.signing__form-submit-button {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Inter', sans-serif;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.signing__form-submit-button:hover {
+    cursor: pointer;
+}

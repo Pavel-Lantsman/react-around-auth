@@ -1,0 +1,8 @@
+.gallery__like-container {
+    width: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*margin-right: 15px;*/
+    margin: 22px 22px 22px 0;
+}

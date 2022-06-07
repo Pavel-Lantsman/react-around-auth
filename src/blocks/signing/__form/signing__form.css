@@ -1,0 +1,8 @@
+.signing__form {
+    background-color: black;
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
