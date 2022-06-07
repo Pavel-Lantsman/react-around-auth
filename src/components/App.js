@@ -151,6 +151,17 @@ function App() {
     return () => document.removeEventListener("keydown", closeByEscape);
   }, []);
 
+  useEffect(() => {
+    const handleOverlay = (evt) => {
+      if (evt.target.classList.contains('popup_opened')) {
+        closeAllPopups();
+      }
+    }
+
+    document.addEventListener('mouseup', handleOverlay)
+    return () => document.removeEventListener('mouseup', handleOverlay)
+  }, []);
+
   function handleUpdateUser(newData) {
     api
       .setUserInfo(newData)
