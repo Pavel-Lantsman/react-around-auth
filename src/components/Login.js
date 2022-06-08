@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import InfoTooltip from "./InfoTooltip";
+import InfoToolTip from "./InfoToolTip";
 import failPath from "../images/fail.svg";
 
 export default function Login({ onLogin, onClose, isOpen }) {
@@ -12,7 +12,7 @@ export default function Login({ onLogin, onClose, isOpen }) {
   function handleChange(e) {
     const { name, value } = e.target;
     // Disallow special characters to prevent XSS
-    let filteredValue = value.replace(/[*|"<>[\]{}`;&$]+/, " ");
+    const filteredValue = value.replace(/[*|"<>[\]{}`;&$]+/, " ");
     setValues( {...values, [name]: filteredValue} );
   }
 
@@ -52,7 +52,7 @@ export default function Login({ onLogin, onClose, isOpen }) {
         </form>
         <Link to="/signup" className="signing__link">Not a member yet? Sign up here!</Link>
       </div>
-      <InfoTooltip
+      <InfoToolTip
                 isOpen={isOpen}
                 name="info"
                 title= "Oops, something went wrong! Please try again."

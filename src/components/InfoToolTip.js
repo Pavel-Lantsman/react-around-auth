@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function InfoTooltip(props) {
+export default function InfoToolTip(props) {
     return(
         <div className={`popup popup_type_${props.name} ${props.isOpen ? "popup_opened":''}`} >
           <div className="popup__frame">

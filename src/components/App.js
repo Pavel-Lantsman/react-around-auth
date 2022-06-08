@@ -77,12 +77,7 @@ function App() {
     api
       .getUserInfo()
       .then((res) => {
-        setCurrentUser({
-          name: res.name,
-          about: res.about,
-          avatar: res.avatar,
-          _id: res._id,
-        });
+        setCurrentUser(res);
       })
       .catch(console.log);
   }, []);
@@ -107,7 +102,7 @@ function App() {
   // Keep returning users logged in
   useEffect(() => {
     checkToken();
-  }, []);
+  }, );
 
   function handleEditAvatarClick() {
     setIsEditAvatarPopupOpen(true);
@@ -166,12 +161,7 @@ function App() {
     api
       .setUserInfo(newData)
       .then((res) => {
-        setCurrentUser({
-          name: res.name,
-          about: res.about,
-          avatar: res.avatar,
-          _id: res._id,
-        });
+        setCurrentUser(res);
         closeAllPopups();
       })
       .catch(console.log);
@@ -181,12 +171,7 @@ function App() {
     api
       .setUserAvatar(newData)
       .then((res) => {
-        setCurrentUser({
-          name: res.name,
-          about: res.about,
-          avatar: res.avatar,
-          _id: res._id,
-        });
+        setCurrentUser(res);
         closeAllPopups();
       })
       .catch(console.log);
